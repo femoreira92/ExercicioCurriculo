@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #171e30;
+    color: #fff;
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+}
+
+a {
+    color: #fff;
+    transition: 0.5s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    padding: 20px 50px;
+    height: 8vh;
+    width: 100%;
+    position: relative;
+}
+
+nav .logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-list li {
+    cursor: pointer;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    margin: 20px 0;
+    background-color: #1c253a;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.skills, .softskill, .grad, .addcourses, .exp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h2, h3 {
+    color: #f4f4f4;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hardskill-bar, .softskill-bar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.hardskill-bar li {
+    background-color: #e7e7e7;
+    color: #171e30;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.softskill-bar li {
+    background-color: #ccc;
+    color: #171e30;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+p {
+    color: #ccc;
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.about-sec h2, .skills-sec h2, .grad-sec h2, .addcourses-sec h2, .experience-sec h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+
+}
+
+.addcourses-title h2 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.skills-sec h3, .addcourses-sec h3, .experience-sec h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.addcourses-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #1c253a;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.addcourses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+}
+
+.addcourses h3 {
+    font-size: 22px;
+    color: #f4f4f4;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.soft-title h3 {
+    margin-top: 20px;
+}
+
+.skills h2 {
+    margin-bottom: 0px;
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        padding: 20px 10px;
+    }
+
+    .hardskill-bar, .softskill-bar {
+        flex-direction: column;
+    }
+}
